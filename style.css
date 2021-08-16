@@ -1,0 +1,172 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+:root {
+  --c-dark: hsl(185, 75%, 39%);
+  --c-med: hsl(229, 23%, 23%);
+  --c-light: hsl(227, 10%, 46%);
+  --c-gray: hsl(0, 0%, 59%);
+  --fs-big: 18px;
+  --ff: "Kumbh Sans";
+  --fw-bold: 700;
+  --fw-normal: 400;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+
+.location {
+  font-size: 14px;
+}
+
+.age, .location, .social-stats span span {
+  color: var(--c-gray);
+  letter-spacing: 1px;
+}
+
+.social-stats span {
+  font-weight: var(--fw-bold);
+}
+
+.social-stats span span {
+  font-size: .75rem;
+  font-weight: var(--fw-normal);
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-big);
+  text-align: center;
+  color: var(--c-med);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--c-dark);
+  background: url("./images/bg-pattern-top.svg") -250px -500px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 750px 500px/1000px no-repeat, -webkit-gradient(linear, left top, left bottom, from(var(--c-dark)), to(var(--c-dark)));
+  background: url("./images/bg-pattern-top.svg") -250px -500px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 750px 500px/1000px no-repeat, linear-gradient(var(--c-dark), var(--c-dark));
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url("./images/bg-pattern-top.svg") -750px -600px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 150px 300px/1000px no-repeat, -webkit-gradient(linear, left top, left bottom, from(var(--c-dark)), to(var(--c-dark)));
+    background: url("./images/bg-pattern-top.svg") -750px -600px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 150px 300px/1000px no-repeat, linear-gradient(var(--c-dark), var(--c-dark));
+  }
+}
+
+.card {
+  width: 326px;
+  height: 375px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding-top: 87px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, transparent 0 140px, white 0 100%), url("./images/bg-pattern-card.svg");
+  background-position: top;
+}
+
+.card img {
+  width: 106px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: white;
+}
+
+.card .name {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.card .location {
+  display: block;
+  margin-top: 5px;
+}
+
+.social-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid lightgray;
+}
+
+.social-stats span {
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
