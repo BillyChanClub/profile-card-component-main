@@ -111,15 +111,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--c-dark);
-  background: url("./images/bg-pattern-top.svg") -250px -500px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 750px 500px/1000px no-repeat, -webkit-gradient(linear, left top, left bottom, from(var(--c-dark)), to(var(--c-dark)));
-  background: url("./images/bg-pattern-top.svg") -250px -500px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 750px 500px/1000px no-repeat, linear-gradient(var(--c-dark), var(--c-dark));
-}
-
-@media (max-width: 375px) {
-  body {
-    background: url("./images/bg-pattern-top.svg") -750px -600px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 150px 300px/1000px no-repeat, -webkit-gradient(linear, left top, left bottom, from(var(--c-dark)), to(var(--c-dark)));
-    background: url("./images/bg-pattern-top.svg") -750px -600px/1000px no-repeat, url("./images/bg-pattern-bottom.svg") 150px 300px/1000px no-repeat, linear-gradient(var(--c-dark), var(--c-dark));
-  }
+  background: url("./images/bg-pattern-top.svg") no-repeat, url("./images/bg-pattern-bottom.svg") no-repeat, -webkit-gradient(linear, left top, left bottom, from(var(--c-dark)), to(var(--c-dark)));
+  background: url("./images/bg-pattern-top.svg") no-repeat, url("./images/bg-pattern-bottom.svg") no-repeat, linear-gradient(var(--c-dark), var(--c-dark));
+  background-position: right 52vw bottom 38vh, left 48vw top 52vh;
 }
 
 .card {
